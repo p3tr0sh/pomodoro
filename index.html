@@ -1,11 +1,25 @@
 <html>
-<head>
-<title>Work, bitch.</title>
-<meta charset="UTF-8">
-<script src="script.js"></script>
-</head>
-<body>
-<p id="demo">00:00</p>
-<button type="button" onclick="pause()" id="pauseButton">Start</button>
-</body>
+    <head>
+        <title>Work, bitch.</title>
+        <meta charset="UTF-8">
+        <script src="script.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Nova Mono' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Share Tech Mono' rel='stylesheet'>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <p id="timer_display">00:00</p>
+            <button type="button" onclick="pause()" id="pause_button">Start</button>
+            <div class="slider_box">
+                auto
+                <input type="range" min="0" max="1" value="0" class="slider" id="mode_switcher">
+                manual
+            </div>
+        </div>
+        <oli id="log">
+
+        </ol>
+    </body>
 </html>
