@@ -1,4 +1,4 @@
-const workTime = 2;
+const workTime = 25*60;
 const shortBreakTime = 5*60;
 const longBreakTime = 20*60;
 const cycles = 6;
@@ -10,6 +10,7 @@ var phaseText = "";
 var phases = ['Work Phase', 'Short Break', 'LongBreak', 'Break', 'Pause'];
 var phaseIndex = 0;
 
+// keyboard listener space bar
 
 function pad(seconds){
 	minutes = Math.floor(seconds/60);
@@ -60,6 +61,7 @@ function manual() {
 			phaseIndex = 3;
 			phaseText = phases[phaseIndex];
 			pause('started');
+			notifyMe(phaseText);
 		} else{
 			seconds--;
 		}
