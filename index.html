@@ -11,14 +11,15 @@
     <body>
         <div class="container">
             <p id="timer_display">00:00</p>
-            <button type="button" onclick="pause()" id="pause_button">Start</button>
+            <button type="button" onclick="pause()" id="pause_button" class="rounded_button">Start</button>
+            <button type="button" onclick="reset_phase()" id="reset_button" class="rounded_button">Reset Phase</button>
             <div class="slider_box">
                 auto
                 <input type="range" min="0" max="1" value="0" class="slider" id="mode_switcher">
                 manual
             </div>
         </div>
-        <oli id="log">
+        <ol id="log">
 
         </ol>
     </body>
